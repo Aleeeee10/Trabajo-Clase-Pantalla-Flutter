@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MiPantalla extends StatelessWidget {
   const MiPantalla({super.key});
 
@@ -8,10 +7,21 @@ class MiPantalla extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mi primera app'),
+        title: const Text('Pantalla de Matias Alcivar'),
+        centerTitle: true,
       ),
       body: const Center(
-        child: Text('Pantalla de Alejandro'),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.person, size: 80),
+            SizedBox(height: 16),
+            Text(
+              'Hola, soy Matias Alcivar',
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
       ),
     );
   }
