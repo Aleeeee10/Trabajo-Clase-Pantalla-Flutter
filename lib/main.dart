@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'presentacion/screens/mipantalla.dart';
+import 'presentacion/screens/pantallacristian.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: const MiPantalla(),
+      routes: {
+        '/cristian': (context) => const PantallaCristian(),
+      },
     );
   }
 }
